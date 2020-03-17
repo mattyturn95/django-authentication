@@ -4,7 +4,7 @@ from accounts.views import index, logout
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', index),
+    url(r'^$', index, name="index"),
     url(r'^accounts/logout/$', logout, name='logout')
 
 ]
